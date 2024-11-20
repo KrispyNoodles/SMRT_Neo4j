@@ -38,6 +38,4 @@ Email: Joeylimjunfeng@gmail.com
 
 ## Acknowledgments
 
-## Acknowledgments
-
 - 🛤️ **Reddit Community:** A special thanks to the [r/singapore](https://www.reddit.com/r/singapore/comments/10wkygf/mrt_map_with_transfer_timing/) forum for providing valuable data on transfer timings between MRT stations. Their contributions significantly enhanced the accuracy and reliability of the **SMRT_Neo4j** project. [Excel Spreadsheet](https://docs.google.com/spreadsheets/d/1e-Tuf6rHBFsgsuFN7XqbFL8ec_vdRjQw/edit?gid=459175256#gid=459175256)
