@@ -16,7 +16,7 @@ RETURN N
 #### 2. Calculating shortest total travel time between 'Boon Lay' and 'Punggol'
 
 ```cypher
-MATCH path = (start:Station {name: 'Boon Lay'})-[:CONNECTED_TO*1..25]->(end:Station {name: 'Punggol'})
+MATCH path = (start:Station {name: 'Boon Lay'})-[:CONNECTED_TO*1..26]->(end:Station {name: 'Punggol'})
  
 WITH path, reduce(totalTime = 0, rel IN relationships(path) | totalTime + rel.travel_time) AS total_travel_time 
  
