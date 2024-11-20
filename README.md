@@ -25,7 +25,7 @@ ORDER BY total_travel_time ASC
 LIMIT 1
 ```
 
-#### 3.  Finding all stations on the Downtown Line
+#### 3.  Finding all stations on the 'Downtown Line'
 ```cypher
 MATCH (s:Station {line: 'Downtown Line'})
 RETURN s.name
