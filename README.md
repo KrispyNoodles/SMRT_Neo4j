@@ -25,7 +25,7 @@ ORDER BY total_travel_time ASC
 LIMIT 1
 ```
 
-### 3. Calculating the Least Number of Stations to Travel Between 'Boon Lay' and 'Punggol'
+#### 3. Calculating the Least Number of Stations to Travel Between 'Boon Lay' and 'Punggol'
 ```cypher
 MATCH path = shortestPath((start:Station)-[:CONNECTED_TO*]->(end:Station))
 WHERE start.name="Boon Lay" AND end.name="Punggol"
