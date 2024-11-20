@@ -1,10 +1,6 @@
 # SMRT_Neo4j
 Welcome to the Singapore MRT Network Graph Database! This project models the Singapore Mass Rapid Transit (MRT) system using Neo4j, a leading graph database. The aim is to represent MRT stations, their connections across different lines, and the travel times between them. This structured representation facilitates advanced queries, route optimization, and insightful analyses of the MRT network.
 
-# Contact
-If you have any questions, suggestions, or feedback, feel free to reach out:
-Email: Joeylimjunfeng@gmail.com
-
 ## Examples
 
 Here are some practical examples to get you started:
@@ -28,3 +24,7 @@ RETURN path, total_travel_time
 ORDER BY total_travel_time ASC 
 LIMIT 1
 ```
+
+# Contact
+If you have any questions, suggestions, or feedback, feel free to reach out:
+Email: Joeylimjunfeng@gmail.com
