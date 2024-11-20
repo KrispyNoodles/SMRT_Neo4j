@@ -31,6 +31,6 @@ MATCH (s:Station {line: 'Downtown Line'})
 RETURN s.name
 ```
 
-# Contact
+## Contact
 If you have any questions, suggestions, or feedback, feel free to reach out:
 Email: Joeylimjunfeng@gmail.com
