@@ -13,7 +13,7 @@ Here are some practical examples to get you started:
 MATCH (N)
 RETURN N
 ```
-#### 2. Searching for the fastest route based off train timing
+#### 2. Calculating total travel time between 'Boon Lay' and 'Punggol'
 
 ```cypher
 MATCH path = (start:Station {name: 'Boon Lay'})-[:CONNECTED_TO*1..25]->(end:Station {name: 'Punggol'})
