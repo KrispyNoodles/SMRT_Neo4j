@@ -13,7 +13,7 @@ Here are some practical examples to get you started:
 MATCH (N)
 RETURN N
 ```
-#### 2. Calculating total travel time between 'Boon Lay' and 'Punggol'
+#### 2. Calculating shortest total travel time between 'Boon Lay' and 'Punggol'
 
 ```cypher
 MATCH path = (start:Station {name: 'Boon Lay'})-[:CONNECTED_TO*1..25]->(end:Station {name: 'Punggol'})
@@ -25,10 +25,11 @@ ORDER BY total_travel_time ASC
 LIMIT 1
 ```
 
-#### 3.  Finding all stations on the 'Downtown Line'
+### 3. Calculating the Least Number of Stations to Travel Between 'Boon Lay' and 'Punggol'
 ```cypher
-MATCH (s:Station {line: 'Downtown Line'})
-RETURN s.name
+MATCH path = shortestPath((start:Station)-[:CONNECTED_TO*]->(end:Station))
+WHERE start.name="Boon Lay" AND end.name="Punggol"
+RETURN path
 ```
 
 ## Contact
