@@ -7,13 +7,13 @@ Here are some practical examples to get you started:
 
 ### Sample Queries
 
-#### 1. Viewing All Nodes
+#### 1. Viewing all Nodes
 
 ```cypher
 MATCH (N)
 RETURN N
 ```
-#### 1. Searching for the fastest route based off train timing.
+#### 2. Searching for the fastest route based off train timing
 
 ```cypher
 MATCH path = (start:Station {name: 'Boon Lay'})-[:CONNECTED_TO*1..25]->(end:Station {name: 'Punggol'})
@@ -23,6 +23,12 @@ WITH path, reduce(totalTime = 0, rel IN relationships(path) | totalTime + rel.tr
 RETURN path, total_travel_time 
 ORDER BY total_travel_time ASC 
 LIMIT 1
+```
+
+#### 3.  Finding all stations on the Downtown Line
+```cypher
+MATCH (s:Station {line: 'Downtown Line'})
+RETURN s.name
 ```
 
 # Contact
